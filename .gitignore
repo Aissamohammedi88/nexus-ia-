@@ -1,18 +1,36 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# ==========================================
+# 🧠 NEXUS-IA — .gitignore
+# ==========================================
 
-# Other files and folders
-.settings/
+# --- Modèles lourds (NE PAS versionner les binaires) ---
+*.gguf
+*.bin
+*.safetensors
+*.zip
+*.tar.gz
+*.7z
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+venv/
+.venv/
+*.egg-info/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# --- Système / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- Logs & données locales ---
+*.log
+logs/
+data/
+tributes.json
